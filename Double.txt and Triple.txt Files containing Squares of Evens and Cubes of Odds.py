@@ -16,7 +16,10 @@ def computation(): # defining a function
     # Create labels for the output files with border and border color
     double_label = tk.Label(frame, text="Squares", font=("Arial", 12, "bold"), bg="yellow", bd=2, relief="groove")
     double_label.grid(row=0, column=0, padx=10)
-    
+
+    triple_label = tk.Label(frame, text="Cubes", font=("Arial", 12, "bold"), bg="red", bd=2, relief="groove")
+    triple_label.grid(row=0, column=1, padx=10)
+
 # Open the file named integers.txt for reading, double.txt for appending, and tripple.txt for appending.
     with open ("integers.txt", "r") as integers, open("double.txt", "a") as squared, open("tripple.txt", "a") as cube:
         # Read each line in integers.txt.
