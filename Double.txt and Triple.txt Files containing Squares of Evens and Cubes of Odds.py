@@ -47,12 +47,18 @@ def computation(): # defining a function
             for idx, square in enumerate(squares):
                 square_label = tk.Label(frame, text=square, bg="magenta")
                 square_label.grid(row=idx+3, column=0)
-                
+
         def load_cubes():
             clear_output()
             for idx, cube in enumerate(cubes):
                 cube_label = tk.Label(frame, text=cube, bg="magenta")
                 cube_label.grid(row=idx+3, column=1)
+
+        def load_output():
+            if mode.get() == "Squares":
+                load_squares()
+            else:
+                load_cubes()
 
 computation() # calling a function
 # End of the code.
