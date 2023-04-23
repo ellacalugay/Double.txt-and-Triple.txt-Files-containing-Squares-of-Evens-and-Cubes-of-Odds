@@ -70,6 +70,15 @@ def computation(): # defining a function
             for child in frame.winfo_children():
                 if child != top_border and child != double_label and child != triple_label:
                     child.destroy()
+
+        # Create buttons for switching between squares and cubes output
+        mode = tk.StringVar()
+        mode.set("Squares")
+        square_button = tk.Radiobutton(root, text="Squares", variable=mode, value="Squares", bg="yellow")
+        square_button.pack(side="left", padx=(0,10))
+
+        cube_button = tk.Radiobutton(root, text="Cubes", variable=mode, value="Cubes", bg="red")
+        cube_button.pack(side="left", padx=(0,10))
         
 computation() # calling a function
 # End of the code.
