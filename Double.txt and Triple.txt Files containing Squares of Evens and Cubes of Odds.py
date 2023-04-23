@@ -4,6 +4,7 @@
 def computation():
 # Pseudocode
 # Open the file named integers.txt for reading, double.txt for appending, and tripple.txt for appending.
+    with open ("integers.txt", "r") as integers, open("double.txt", "a") as squared, open("tripple.txt", "a") as cube:
     # Read each line in integers.txt.
         # If the integer is even, square it. 
             # Append the squared value of even integers to double.txt
