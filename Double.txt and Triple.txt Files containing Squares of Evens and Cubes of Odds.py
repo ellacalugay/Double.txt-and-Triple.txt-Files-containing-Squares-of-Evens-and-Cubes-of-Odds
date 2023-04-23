@@ -4,7 +4,11 @@
 # Pseudocode
 import tkinter as tk
 
-def computation():
+def computation(): # defining a function
+    # Create a tkinter window
+    root = tk.Tk()
+    root.title("PROBLEM 4")
+    
 # Open the file named integers.txt for reading, double.txt for appending, and tripple.txt for appending.
     with open ("integers.txt", "r") as integers, open("double.txt", "a") as squared, open("tripple.txt", "a") as cube:
         # Read each line in integers.txt.
