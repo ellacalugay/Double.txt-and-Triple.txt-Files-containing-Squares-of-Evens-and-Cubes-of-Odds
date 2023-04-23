@@ -79,6 +79,12 @@ def computation(): # defining a function
 
         cube_button = tk.Radiobutton(root, text="Cubes", variable=mode, value="Cubes", bg="red")
         cube_button.pack(side="left", padx=(0,10))
+
+        load_button = tk.Button(root, text="Load Output", command=load_output, bg="green")
+        load_button.pack(side="left")
+
+        close_button = tk.Button(root, text="Close", command=lambda: [clear_output(), load_close()], bg="blue")
+        close_button.pack(side="left")
         
 computation() # calling a function
 # End of the code.
