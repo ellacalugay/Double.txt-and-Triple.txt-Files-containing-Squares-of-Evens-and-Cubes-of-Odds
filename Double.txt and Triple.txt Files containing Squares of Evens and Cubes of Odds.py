@@ -17,4 +17,5 @@ def computation():
         else:
             cube_odd = input_number * input_number * input_number
             # Append the cube value of odd integers to tripple.txt
+            cube.write (str(cube_odd) + "\n")
 # End of the code.
