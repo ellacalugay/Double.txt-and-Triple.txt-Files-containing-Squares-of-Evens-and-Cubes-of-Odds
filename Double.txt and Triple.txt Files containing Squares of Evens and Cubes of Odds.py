@@ -40,13 +40,19 @@ def computation(): # defining a function
             else: 
                 cube_odd = input_number * input_number * input_number
                 cubes.append(str(cube_odd))
-                
+
         # Define the functions
         def load_squares():
             clear_output()
             for idx, square in enumerate(squares):
                 square_label = tk.Label(frame, text=square, bg="magenta")
                 square_label.grid(row=idx+3, column=0)
+                
+        def load_cubes():
+            clear_output()
+            for idx, cube in enumerate(cubes):
+                cube_label = tk.Label(frame, text=cube, bg="magenta")
+                cube_label.grid(row=idx+3, column=1)
 
 computation() # calling a function
 # End of the code.
