@@ -9,6 +9,8 @@ def computation():
         for line in integers:
             input_number = int(line)
         # If the integer is even, square it. 
+            if input_number % 2 == 0:
+                square_even = input_number * input_number
             # Append the squared value of even integers to double.txt
         # If the integer is odd, cube it.
             # Append the cube value of odd integers to tripple.txt
