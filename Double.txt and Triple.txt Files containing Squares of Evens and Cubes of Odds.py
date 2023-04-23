@@ -36,11 +36,10 @@ def computation(): # defining a function
             if input_number % 2 == 0:
                 square_even = input_number * input_number
                 squares.append(str(square_even))
-            # If the integer is odd, cube it.
-            else:
+            # If the integer is odd, cube it.
+            else: 
                 cube_odd = input_number * input_number * input_number
-                # Append the cube value of odd integers to tripple.txt
-                cube.write (str(cube_odd) + "\n")
+                cubes.append(str(cube_odd))
 
 computation() # calling a function
 # End of the code.
