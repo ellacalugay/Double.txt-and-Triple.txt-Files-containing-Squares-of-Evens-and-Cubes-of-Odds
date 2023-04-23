@@ -20,6 +20,10 @@ def computation(): # defining a function
     triple_label = tk.Label(frame, text="Cubes", font=("Arial", 12, "bold"), bg="red", bd=2, relief="groove")
     triple_label.grid(row=0, column=1, padx=10)
 
+    # Add a border to the top of the output
+    top_border = tk.Frame(frame, bg="blue", height=2, width=200)
+    top_border.grid(row=1, columnspan=2, pady=(10,0))
+
 # Open the file named integers.txt for reading, double.txt for appending, and tripple.txt for appending.
     with open ("integers.txt", "r") as integers, open("double.txt", "a") as squared, open("tripple.txt", "a") as cube:
         # Read each line in integers.txt.
