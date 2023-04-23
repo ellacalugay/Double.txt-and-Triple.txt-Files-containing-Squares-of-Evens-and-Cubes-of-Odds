@@ -65,6 +65,11 @@ def computation(): # defining a function
                 if bye != top_border and bye != double_label and bye != triple_label:
                     bye.destroy()
             root.destroy()  # Terminate the program by closing the main window
-            
+
+        def clear_output():
+            for child in frame.winfo_children():
+                if child != top_border and child != double_label and child != triple_label:
+                    child.destroy()
+        
 computation() # calling a function
 # End of the code.
