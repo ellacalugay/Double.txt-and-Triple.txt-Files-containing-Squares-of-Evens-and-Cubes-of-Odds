@@ -74,10 +74,10 @@ def computation(): # defining a function
         # Create buttons for switching between squares and cubes output
         mode = tk.StringVar()
         mode.set("Squares")
-        square_button = tk.Radiobutton(root, text="Squares", variable=mode, value="Squares", bg="yellow")
+        square_button = tk.Radiobutton(root, text="Even", variable=mode, value="Squares", bg="yellow")
         square_button.pack(side="left", padx=(0,10))
 
-        cube_button = tk.Radiobutton(root, text="Cubes", variable=mode, value="Cubes", bg="red")
+        cube_button = tk.Radiobutton(root, text="Odd", variable=mode, value="Cubes", bg="red")
         cube_button.pack(side="left", padx=(0,10))
 
         load_button = tk.Button(root, text="Load Output", command=load_output, bg="green")
