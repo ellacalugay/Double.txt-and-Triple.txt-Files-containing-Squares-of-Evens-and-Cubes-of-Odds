@@ -88,6 +88,8 @@ def computation(): # defining a function
 
     # Start the tkinter event loop
     root.mainloop()
-        
-computation() # calling a function
+
+# Call the computation function 
+computation() 
+
 # End of the code.
