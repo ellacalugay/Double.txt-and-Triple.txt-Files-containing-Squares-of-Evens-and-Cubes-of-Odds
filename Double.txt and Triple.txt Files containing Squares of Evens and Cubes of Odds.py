@@ -2,6 +2,7 @@
 # Creating a program that will create to separate files containing the squares of all even and cubes of all odds.
 
 def computation():
+
 # Pseudocode
 # Open the file named integers.txt for reading, double.txt for appending, and tripple.txt for appending.
     with open ("integers.txt", "r") as integers, open("double.txt", "a") as squared, open("tripple.txt", "a") as cube:
@@ -18,4 +19,6 @@ def computation():
             cube_odd = input_number * input_number * input_number
             # Append the cube value of odd integers to tripple.txt
             cube.write (str(cube_odd) + "\n")
+            
+computation()
 # End of the code.
