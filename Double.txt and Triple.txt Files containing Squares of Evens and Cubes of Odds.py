@@ -60,5 +60,11 @@ def computation(): # defining a function
             else:
                 load_cubes()
 
+        def load_close():
+            for bye in frame.winfo_children():
+                if bye != top_border and bye != double_label and bye != triple_label:
+                    bye.destroy()
+            root.destroy()  # Terminate the program by closing the main window
+            
 computation() # calling a function
 # End of the code.
