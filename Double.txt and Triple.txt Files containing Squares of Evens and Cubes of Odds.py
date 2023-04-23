@@ -14,5 +14,7 @@ def computation():
             # Append the squared value of even integers to double.txt
                 squared.write (str(square_even) + "\n")
         # If the integer is odd, cube it.
+        else:
+            cube_odd = input_number * input_number * input_number
             # Append the cube value of odd integers to tripple.txt
 # End of the code.
