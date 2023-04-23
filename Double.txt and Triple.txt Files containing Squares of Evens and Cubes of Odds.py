@@ -24,8 +24,9 @@ def computation(): # defining a function
     top_border = tk.Frame(frame, bg="blue", height=2, width=200)
     top_border.grid(row=1, columnspan=2, pady=(10,0))
 
-# Open the file named integers.txt for reading, double.txt for appending, and tripple.txt for appending.
-    with open ("integers.txt", "r") as integers, open("double.txt", "a") as squared, open("tripple.txt", "a") as cube:
+    # Open the file named integers.txt for reading
+    with open("integers.txt", "r") as integers:
+        row = 3
         # Read each line in integers.txt.
         for line in integers:
             input_number = int(line)
