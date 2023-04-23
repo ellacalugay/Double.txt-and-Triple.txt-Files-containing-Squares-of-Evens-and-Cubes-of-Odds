@@ -85,6 +85,9 @@ def computation(): # defining a function
 
         close_button = tk.Button(root, text="Close", command=lambda: [clear_output(), load_close()], bg="blue")
         close_button.pack(side="left")
+
+    # Start the tkinter event loop
+    root.mainloop()
         
 computation() # calling a function
 # End of the code.
