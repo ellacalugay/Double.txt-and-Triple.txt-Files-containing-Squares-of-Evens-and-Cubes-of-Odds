@@ -28,6 +28,8 @@ def computation(): # defining a function
     with open("integers.txt", "r") as integers:
         row = 3
         # Read each line in integers.txt.
+        squares = []
+        cubes = []
         for line in integers:
             input_number = int(line)
             # If the integer is even, square it. 
