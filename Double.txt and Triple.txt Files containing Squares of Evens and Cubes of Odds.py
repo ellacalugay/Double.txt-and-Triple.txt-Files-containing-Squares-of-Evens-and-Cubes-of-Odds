@@ -25,7 +25,7 @@ def computation(): # defining a function
     top_border.grid(row=1, columnspan=2, pady=(10,0))
 
     # Open the file named integers.txt for reading
-    with open("integers.txt", "r") as integers:
+    with open ("integers.txt", "r") as integers, open("double.txt", "a") as squared, open("tripple.txt", "a") as cube:        
         row = 3
         # Read each line in integers.txt.
         squares = []
@@ -34,12 +34,12 @@ def computation(): # defining a function
             input_number = int(line)
             # If the integer is even, square it.
             if input_number % 2 == 0:
-                square_even = input_number * input_number
-                squares.append(str(square_even))
+                squared_even = input_number ** 2
+                squared.write(str(squared_even) + "\n")
             # If the integer is odd, cube it.
             else: 
-                cube_odd = input_number * input_number * input_number
-                cubes.append(str(cube_odd))
+                cube_odd = input_number ** 3
+                cube.write(str(cube_odd) + "\n")
 
         # Define the functions
         def load_squares():
