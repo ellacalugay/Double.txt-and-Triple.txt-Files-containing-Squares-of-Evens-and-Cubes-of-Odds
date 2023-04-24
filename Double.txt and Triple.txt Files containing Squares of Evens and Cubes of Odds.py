@@ -52,9 +52,11 @@ def computation(): # defining a function
 
         def load_cubes():
             clear_output()
-            for idx, cube in enumerate(cubes):
-                cube_label = tk.Label(frame, text=cube, bg="magenta")
-                cube_label.grid(row=idx+3, column=1)
+            with open("tripple.txt", "r") as cube_file:
+                cubes = cube_file.readlines()
+                for idx, cube in enumerate(cubes):
+                    cube_label = tk.Label(frame, text=cube, bg="magenta")
+                    cube_label.grid(row=idx+3, column=1)
 
         def load_output():
             if mode.get() == "Squares":
