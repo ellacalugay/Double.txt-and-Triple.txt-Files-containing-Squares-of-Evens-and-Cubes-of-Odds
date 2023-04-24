@@ -44,9 +44,11 @@ def computation(): # defining a function
         # Define the functions
         def load_squares():
             clear_output()
-            for idx, square in enumerate(squares):
-                square_label = tk.Label(frame, text=square, bg="magenta")
-                square_label.grid(row=idx+3, column=0)
+            with open("double.txt", "r") as squared_file:
+                squares = squared_file.readlines()
+                for idx, square in enumerate(squares):
+                    square_label = tk.Label(frame, text=square, bg="magenta")
+                    square_label.grid(row=idx+3, column=0)
 
         def load_cubes():
             clear_output()
