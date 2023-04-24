@@ -85,7 +85,7 @@ def computation(): # defining a function
         cube_button.pack(side="left", padx=(0,10))
 
         load_button = tk.Button(root, text="Load Output", command=load_output, bg="green")
-        load_button.pack(side="left")
+        load_button.pack(side="left", padx=(0,10))
 
         close_button = tk.Button(root, text="Close", command=lambda: [clear_output(), load_close()], bg="blue")
         close_button.pack(side="left")
