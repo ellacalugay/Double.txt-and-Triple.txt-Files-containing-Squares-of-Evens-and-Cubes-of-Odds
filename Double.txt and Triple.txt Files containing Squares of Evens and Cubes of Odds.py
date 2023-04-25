@@ -2,6 +2,7 @@
 # Creating a program that will create to separate files containing the squares of all even and cubes of all odds.
 
 # Pseudocode
+# Import the necessary module 
 import tkinter as tk
 
 def computation(): # defining a function
