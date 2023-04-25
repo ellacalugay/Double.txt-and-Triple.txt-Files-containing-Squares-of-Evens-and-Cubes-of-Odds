@@ -25,7 +25,7 @@ def computation(): # defining a function
     top_border.grid(row=1, columnspan=2, pady=(10,0))
 
     # Open the file named integers.txt for reading
-    with open ("integers.txt", "r") as integers, open("double.txt", "a") as squared, open("tripple.txt", "a") as cube:        
+    with open ("integers.txt", "r") as integers, open("double.txt", "a") as squared, open("triple.txt", "a") as cube:        
         row = 3
         # Read each line in integers.txt.
         squares = []
@@ -52,7 +52,7 @@ def computation(): # defining a function
 
         def load_cubes():
             clear_output()
-            with open("tripple.txt", "r") as cube_file:
+            with open("triple.txt", "r") as cube_file:
                 cubes = cube_file.readlines()
                 for idx, cube in enumerate(cubes):
                     cube_label = tk.Label(frame, text=cube, bg="magenta")
